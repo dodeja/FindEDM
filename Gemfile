@@ -21,6 +21,6 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
+# To use debugger 192
 # gem 'ruby-debug'
 
