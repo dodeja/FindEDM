@@ -12,7 +12,7 @@ gem 'jquery-rails'
 
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3'
-  gem 'activerecord-postgresql-adapter'
+  gem 'pg', :require => 'pg'
 end
 
 group :development do
