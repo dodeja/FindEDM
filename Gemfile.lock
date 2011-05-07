@@ -104,5 +104,5 @@ DEPENDENCIES
   rails (= 3.1.0.beta1)
   sass
   sqlite3
-  therubyracer (~> 0.8.2.pre)
+  therubyracer
   uglifier

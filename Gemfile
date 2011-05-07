@@ -15,7 +15,7 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
-gem "therubyracer", "~> 0.8.2.pre"
+gem "therubyracer", :require => 'v8'
 # Use unicorn as the web server
 # gem 'unicorn'
 
