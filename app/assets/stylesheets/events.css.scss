@@ -1,0 +1,28 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+.admin_events { 
+	margin: 0;
+	list-style: none;
+	li.evnt {
+		margin: 0;
+		border-bottom: 1px solid #ccc;
+		padding: 5px 0;
+		h2 {
+			margin: 5px 0;
+			font-weight: normal;
+			font-size: 18px;
+		}
+		ul.artists {
+			padding: 5px 0;
+			li {
+				display: inline;
+				padding: 2px 5px;
+				background: #eee;
+			}
+		}
+	}
+}

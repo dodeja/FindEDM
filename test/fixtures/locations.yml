@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  loc_type: MyString
+  display_name: MyString
+  lat: 1.5
+  long: 1.5
+  country: MyString
+  state: MyString
+  postal_code: MyString
+
+two:
+  loc_type: MyString
+  display_name: MyString
+  lat: 1.5
+  long: 1.5
+  country: MyString
+  state: MyString
+  postal_code: MyString

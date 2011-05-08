@@ -1,0 +1,40 @@
+<h1>Listing events</h1>
+
+<ul class="admin_events" id="ulp">
+	<% for event in @sf_results.results %>
+	<li class="evnt">
+		<span class="date"><%= event.start.strftime('%B %d')%></span>
+		<h2><%= event.display_name %></h2>
+		<ul class="artists">
+			<% for artist in event.performance%>
+			<li><%= artist.display_name %></li>
+			<% end %>
+		</ul>
+	</li>
+	<% end %>
+</ul>
+
+
+<table>
+  <tr>
+    <th>Display name</th>
+    <th>Permalink</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.display_name %></td>
+    <td><%= event.permalink %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>
