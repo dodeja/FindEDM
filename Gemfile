@@ -1,7 +1,7 @@
 # source 'http://rubygems.org'
 source :gemcutter
 
-gem 'rails', '3.1.0.beta1'
+gem 'rails', '3.1.0.rc1'
 gem 'mysql2'
 
 # Asset template engines
@@ -12,6 +12,7 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'httparty'
 gem 'songkickr', :git => 'git://github.com/dodeja/songkickr.git'
+gem 'resque'
 
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3'
@@ -20,4 +21,5 @@ end
 
 group :development do
   gem "therubyracer", :require => 'v8'
+  gem 'awesome_print'
 end

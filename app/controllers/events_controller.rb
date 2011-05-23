@@ -8,6 +8,7 @@ class EventsController < ApplicationController
     sk_result = sk.metro_areas_events "26330"
     @sf_results = sk_result
     
+    ap @sf_results.results.first
     
     respond_to do |format|
       format.html # index.html.erb

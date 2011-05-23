@@ -11,7 +11,6 @@ class CreateLocations < ActiveRecord::Migration
       t.string :postal_code
       t.string :postal_code
       t.integer :sk_id
-
       t.timestamps
     end
   end
